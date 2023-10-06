@@ -12,10 +12,10 @@ public class EmpresaBuilder {
 
     public Empresa build(){
         if (empresa.getNomeFantasia().equals("") ){
-            throw new IllegalReceiveException("Nome fantasia inválido");
+            throw new IllegalArgumentException("Nome fantasia inválido");
         }
         if (empresa.getNomeCeo().equals("")){
-            throw new IllegalReceiveException("Nome Ceo inválido");
+            throw new IllegalArgumentException("Nome Ceo inválido");
         }
         return empresa;
     }
